@@ -1,12 +1,12 @@
-let wordsArray = ["donkey", "horse", "sesquipedalian", "supercalifragilisticexpealidocious"]
-let maxLength = 7;
-let shortWordsArray = [];
+var wordsArray = ["donkey", "horse", "sesquipedalian", "supercalifragilisticexpealidocious"]
+var maxLength = 7;
+var shortWordsArray = [];
 
-for (i in wordsArray) {
-	wordsArray[i].length < maxLength ? 
-	shortWordsArray.push(wordsArray[i]) : 
-	null;
+for (var i in wordsArray) {
+	if (wordsArray[i].length < maxLength)  
+		shortWordsArray.push(wordsArray[i]);
 }
 
-console.log(maxLength)
+console.log("Filtering using a maximum word length of " + maxLength + " letters:");
+console.log(shortWordsArray);
 
